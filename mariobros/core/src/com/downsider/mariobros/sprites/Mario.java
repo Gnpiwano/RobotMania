@@ -29,7 +29,7 @@ public class Mario extends Sprite {
     private Animation marioRun;
     private Animation marioJump;
     private float stateTimer;
-    private boolean runningRight;
+    public boolean runningRight;
 
     public Mario(World world, PlayScreen screen) {
         super(screen.getAtlas().findRegion("little_mario"));
