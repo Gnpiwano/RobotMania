@@ -5,7 +5,7 @@ import com.badlogic.gdx.physics.box2d.ContactImpulse;
 import com.badlogic.gdx.physics.box2d.ContactListener;
 import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.physics.box2d.Manifold;
-import com.downsider.mariobros.sprites.InteractiveTileObject;
+import com.downsider.mariobros.sprites.Tiles.InteractiveTileObject;
 
 /**
  * Created by Gebruiker on 24-6-2016.

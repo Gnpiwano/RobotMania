@@ -19,6 +19,8 @@ import com.downsider.mariobros.Scenes.Hud;
 import com.downsider.mariobros.Tools.B2WorldCreator;
 import com.downsider.mariobros.Tools.WorldContactListener;
 import com.downsider.mariobros.sprites.Mario;
+import com.downsider.mariobros.sprites.weapons.SimpleGun;
+
 
 /**
  * Created by Gebruiker on 22-6-2016.
@@ -40,6 +42,7 @@ public class PlayScreen implements Screen {
     private Box2DDebugRenderer b2dr;
 
     private Mario player;
+    private SimpleGun gun;
 
     public PlayScreen(MarioBros game) {
         atlas = new TextureAtlas("Mario_and_Enemies.pack"); //libjdx asset manager als er veel images ingeladen worden.
@@ -63,6 +66,7 @@ public class PlayScreen implements Screen {
         new B2WorldCreator(world, map);
 
         player = new Mario(world, this);
+        gun = new SimpleGun(world, this, player);
 
         world.setContactListener(new WorldContactListener());
     }
@@ -92,6 +96,7 @@ public class PlayScreen implements Screen {
         world.step(1 / 60f, 6, 2);
 
         player.update(dt);
+        gun.update(dt);
 
         gamecam.position.x = player.b2body.getPosition().x;
 
@@ -114,6 +119,9 @@ public class PlayScreen implements Screen {
         game.batch.setProjectionMatrix(gamecam.combined);
         game.batch.begin();
         player.draw(game.batch);
+
+        gun.draw(game.batch);
+
         game.batch.end();
 
 

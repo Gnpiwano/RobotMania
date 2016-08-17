@@ -10,8 +10,8 @@ import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
 import com.downsider.mariobros.MarioBros;
-import com.downsider.mariobros.sprites.Brick;
-import com.downsider.mariobros.sprites.Coin;
+import com.downsider.mariobros.sprites.Tiles.Brick;
+import com.downsider.mariobros.sprites.Tiles.Coin;
 
 /**
  * Created by Gebruiker on 24-6-2016.
