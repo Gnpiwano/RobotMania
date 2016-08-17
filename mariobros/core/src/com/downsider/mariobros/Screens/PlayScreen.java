@@ -52,6 +52,7 @@ public class PlayScreen implements Screen {
         maploader = new TmxMapLoader();
         map = maploader.load("level1.tmx");
         renderer = new OrthogonalTiledMapRenderer(map, 1 / MarioBros.PPM);
+
         gamecam.position.set(gamePort.getWorldWidth() /2, gamePort.getWorldHeight() /2, 0);
 
 
@@ -108,7 +109,7 @@ public class PlayScreen implements Screen {
 
         renderer.render();
 
-        b2dr.render(world, gamecam.combined);
+        //b2dr.render(world, gamecam.combined);
 
         game.batch.setProjectionMatrix(gamecam.combined);
         game.batch.begin();
