@@ -38,14 +38,20 @@ public class SimpleGun extends Sprite {
     }
 
     public void update(float dt) {
-        setPosition(player.getX() + 14 / MarioBros.PPM, player.getY());
-        if(player.runningRight != gunPointingRight) {
 
+        if(player.runningRight != gunPointingRight) {
             gunRegion.flip(true, false);
 
             this.gunPointingRight = player.runningRight;
             this.setRegion(gunRegion);
         }
+        if(player.runningRight){
+            setPosition(player.getX() + 14 / MarioBros.PPM, player.getY());
+        } else {
+            setPosition(player.getX() - 8 / MarioBros.PPM, player.getY());
+        }
+
+
     }
 
 
