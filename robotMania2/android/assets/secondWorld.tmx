@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="128" height="64" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="128x_112x_tileset_2.2" tilewidth="128" tileheight="112" tilecount="10" columns="5">
+  <image source="../../../assets/possible assets/graphicriver-6332238-2d-tileset-platform-game-/Plataform game tile set 1/PNG/128x_112x_tileset_2.2.png" width="640" height="224"/>
+ </tileset>
+ <tileset firstgid="11" name="128x_128x_tileset_2.1" tilewidth="128" tileheight="128" tilecount="25" columns="5">
+  <image source="../../../assets/possible assets/graphicriver-6332238-2d-tileset-platform-game-/Plataform game tile set 1/PNG/128x_128x_tileset_2.1.png" width="708" height="708"/>
+ </tileset>
+ <tileset firstgid="36" name="Blue_sky" tilewidth="128" tileheight="128" tilecount="1" columns="1">
+  <image source="../../../assets/possible assets/freetileset/png/Tiles/18.png" width="128" height="128"/>
+ </tileset>
+ <layer name="Background" width="128" height="64" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzt0jEKgEAQBMF5jP9/o5GJKJyBziK1UPkcfVuSDQAAABZlwAb0p9c/A3bQ/QPtDXT7Z8AO4B8yYAMA38mADfTaZ8AOev3bG+i1z4Ad9Pq3N9BrnwE76PVvb0B/9Ed//tP/fO238n7/87Xfx1qvu35Pr/0eAAAAAAAAAAAAAGi4uvYm9Ed/vm9/XHsb+qM/+qM/+qM/+qM/+qM/93buQ2xp
+  </data>
+ </layer>
+ <layer name="ground_1" width="128" height="64">
+  <data encoding="base64" compression="zlib">
+   eJzt2MkKwkAQBNCoeHJf/v9bJTdPFigzmbTvXSuBhibQlWkCAADgH9yWHoCm7BcAANZjE/J9lymoas390LeRrXm/AAAsw50NNemHtdkv9OFOAgBgdPphbaPsVzcCAMjcTEBLo/RD2rBfqkl30fZDtgvvuqkAAKhMP6yt9X5/6WIzfct/fgAAoI/UD+9dpuBb15D7vwMAAMAs9cNHyI8hP4X8HPJLyN8dQl5x1md4Lu33BQaBAjI=
+  </data>
+ </layer>
+</map>

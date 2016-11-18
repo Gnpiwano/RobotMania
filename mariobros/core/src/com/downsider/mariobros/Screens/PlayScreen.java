@@ -98,6 +98,7 @@ public class PlayScreen implements Screen {
         player.update(dt);
         gun.update(dt);
 
+        System.out.println(player.b2body.getPosition().x + " - " + player.b2body.getPosition().y);
         gamecam.position.x = player.b2body.getPosition().x;
 
         gamecam.update();
@@ -114,7 +115,7 @@ public class PlayScreen implements Screen {
 
         renderer.render();
 
-        //b2dr.render(world, gamecam.combined);
+        b2dr.render(world, gamecam.combined);
 
         game.batch.setProjectionMatrix(gamecam.combined);
         game.batch.begin();

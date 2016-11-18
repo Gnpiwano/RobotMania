@@ -15,7 +15,7 @@ public class CameraView {
 
     public CameraView() {
         gamecam = new OrthographicCamera();
-        gamePort = new FitViewport(Constants.V_WIDTH, Constants.V_HEIGHT, gamecam);
+        gamePort = new FitViewport(Constants.V_WIDTH / Constants.PPM, Constants.V_HEIGHT / Constants.PPM ,gamecam);
     }
 
     public OrthographicCamera getGamecam() {

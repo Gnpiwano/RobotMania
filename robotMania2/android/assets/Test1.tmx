@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="128" height="64" tilewidth="16" tileheight="16" nextobjectid="4">
+ <tileset firstgid="1" name="64x_64x_tileset_2.2" tilewidth="16" tileheight="16" tilecount="320" columns="20">
+  <image source="64x_64x_tileset_2.2.png" width="320" height="256"/>
+ </tileset>
+ <layer name="Ground" width="128" height="64">
+  <data encoding="base64" compression="zlib">
+   eJzt1tlWiAEARtEKhUSJiEwVKpQhmeeUzO//NM47ZP03/95rnfvv8puYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYCiTNVUn6mSdqumaqdN1ps7WbJ2ruTpfF2q+FupiLdalgbdzfJdrqa7U1Vqua3W9VupG3axbdbvu1Gqt1XrdrXt1vzaGnc5/sFlb9aAe1qParp16XE/qaT2r3Xpee/WiXtarel1v6u3A2zm+d/W+PtTH+lSf60vt19c6qMP6Vkf1vX7Uz/pVv+tP/R12Ooya7zZuvtu4+W7j5ruN2z/66hlR
+  </data>
+ </layer>
+ <objectgroup name="Wall">
+  <object id="1" x="5" y="960" width="313" height="64"/>
+  <object id="2" x="276.5" y="880" width="313" height="64"/>
+ </objectgroup>
+</map>
